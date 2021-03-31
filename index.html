@@ -12,7 +12,6 @@
     charset="utf-8">
 </head>
 <body class="main-container">
-
   <header class="header">
     <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
     <a
@@ -21,62 +20,56 @@
       Want more details?
     </a>
   </header>
-
   <main class="main">
-
     <section class="add-block" id="add-element">
       <label class="task add-block__label" for="new-task">Add Item</label>
       <div class="add-block__row-wrapper">
         <input
-          class="input-task add-block__new-task"
+          class="add-block__new-task input-task "
           type="text">
-        <button class="button add-block__button">Add</button>
+        <button class="add-block__button button">Add</button>
       </div>
     </section>
-
     <section class="todo-block">
-      <h3 class="title todo-block__title">Todo</h3>
-      <ul class="task-list todo-block__task-list">
-        <li class="task-item">
-          <input type="checkbox" class="input-task">
-          <label class="task">Pay Bills</label>
-          <input type="text" class="input-task">
-          <button class="button button-edit">Edit</button>
-          <button class="button button-delete">
+      <h3 class="todo-block__title title">Todo</h3>
+      <ul class="todo-block__task-list task-list">
+        <li class="todo-block__item task-item">
+          <input type="checkbox" class="todo-block__input input-task">
+          <label class="todo-block__label task">Pay Bills</label>
+          <input type="text" class="todo-block__input input-task">
+          <button class="todo-block__button button button-edit">Edit</button>
+          <button class="todo-block__button button button-delete">
             <img src="./remove.svg" alt="">
           </button>
         </li>
-        <li class="task-item task-item-edit-mode">
-          <input type="checkbox" class="input-task">
-          <label class="task">Go Shopping</label>
+        <li class="todo-block__item todo-block__item-edit-mode task-item">
+          <input type="checkbox" class="todo-block__input input-task">
+          <label class="todo-block__label task">Go Shopping</label>
           <input
             type="text"
             value="Go Shopping"
-            class="input-task">
-          <button class="button button-edit">Save</button>
-          <button class="button button-delete">
+            class="todo-block__input input-task">
+          <button class="todo-block__button button button-edit">Save</button>
+          <button class="todo-block__button button button-delete">
             <img src="./remove.svg" alt="">
           </button>
         </li>
       </ul>
     </section>
-
-
-
     <section class="completed-block">
-      <h3 class="title completed-block__title">Completed</h3>
-      <ul class="task-list completed-block__task-list">
-        <li class="task-item">
+      <h3 class="completed-block__title title">Completed</h3>
+      <ul class="completed-block__task-list task-list">
+        <li class="completed-block__item task-item">
           <input
             type="checkbox"
-            class="input-task"
+            class="completed-block__input input-task"
             checked>
-          <label class="task">See the Doctor</label>
+          <label class="completed-block__label task">See the Doctor</label>
           <input
             type="text"
-            class="input-task">
-          <button class="button button-edit">Edit</button>
-          <button class="button button-delete">
+            class="completed-block__input input-task">
+          <button class="completed-block__button button button-edit">Edit</button>
+          <button class="completed-block__button button button-delete">
             <img src="./remove.svg" alt="">
           </button>
         </li>

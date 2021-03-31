@@ -148,11 +148,11 @@ button{
   display: none;
 }
 
-.task-list .task-item-edit-mode .input-task[type="text"] {
+.task-list .todo-block__item-edit-mode .input-task[type="text"] {
   display: inline-block;
   width: 224px;
 }
 
-.task-list .task-item-edit-mode .task {
+.task-list .todo-block__item-edit-mode .task {
   display: none;
 }
