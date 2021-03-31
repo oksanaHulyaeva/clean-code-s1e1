@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo App</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+    rel="stylesheet">
+  <link 
+    rel="stylesheet"
+    href="style.css"
+    media="screen"
+    charset="utf-8">
+</head>
+<body class="main-container">
+  <header class="header">
+    <img src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
+    <a
+      class="header__link"
+      href="https://goal-life.com/page/method/matrix-eisenhower">
+      Want more details?
+    </a>
+  </header>
+  <main class="main">
+    <section class="add-block" id="add-element">
+      <label class="task add-block__label" for="new-task">Add Item</label>
+      <div class="add-block__row-wrapper">
+        <input
+          class="add-block__new-task input-task "
+          type="text">
+        <button class="add-block__button button">Add</button>
+      </div>
+    </section>
+    <section class="todo-block">
+      <h3 class="todo-block__title title">Todo</h3>
+      <ul class="todo-block__task-list task-list">
+        <li class="todo-block__item task-item">
+          <input type="checkbox" class="todo-block__input input-task">
+          <label class="todo-block__label task">Pay Bills</label>
+          <input type="text" class="todo-block__input input-task">
+          <button class="todo-block__button button button-edit">Edit</button>
+          <button class="todo-block__button button button-delete">
+            <img src="./remove.svg" alt="">
+          </button>
+        </li>
+        <li class="todo-block__item todo-block__item-edit-mode task-item">
+          <input type="checkbox" class="todo-block__input input-task">
+          <label class="todo-block__label task">Go Shopping</label>
+          <input
+            type="text"
+            value="Go Shopping"
+            class="todo-block__input input-task">
+          <button class="todo-block__button button button-edit">Save</button>
+          <button class="todo-block__button button button-delete">
+            <img src="./remove.svg" alt="">
+          </button>
+        </li>
+      </ul>
+    </section>
+    <section class="completed-block">
+      <h3 class="completed-block__title title">Completed</h3>
+      <ul class="completed-block__task-list task-list">
+        <li class="completed-block__item task-item">
+          <input
+            type="checkbox"
+            class="completed-block__input input-task"
+            checked>
+          <label class="completed-block__label task">See the Doctor</label>
+          <input
+            type="text"
+            class="completed-block__input input-task">
+          <button class="completed-block__button button button-edit">Edit</button>
+          <button class="completed-block__button button button-delete">
+            <img src="./remove.svg" alt="">
+          </button>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
